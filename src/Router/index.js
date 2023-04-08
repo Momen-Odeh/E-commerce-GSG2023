@@ -1,12 +1,13 @@
 import React from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Layout from '../Components/Layout'
+import SectionTitle from '../Components/SectionTitle'
 function Router() {
   return (
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<Layout/>}>
-              <Route index element={<h1>this is main route</h1>}/>
+              <Route index element={<SectionTitle secTitle="Categories"/>}/>
               <Route path='/homePage' element={<h1>this is home page route</h1>}/>
               <Route path='*' element={<h1>404 Not Found</h1>}/>  
             </Route>

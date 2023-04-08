@@ -1,0 +1,13 @@
+.SectionTitle{
+    display: flex;
+    align-items: center;
+}
+.SectionTitle p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #DB4444;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 16px;
+}
