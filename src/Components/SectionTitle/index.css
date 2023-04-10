@@ -1,6 +1,7 @@
 .SectionTitle{
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
 }
 .SectionTitle p {
     padding: 0;

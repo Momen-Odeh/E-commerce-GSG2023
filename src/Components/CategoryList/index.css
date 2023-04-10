@@ -1,4 +1,9 @@
 .CategoryList{
     display: flex;
-    column-gap: 30px;
+    justify-content: space-between;
+}
+
+.Category{
+    width: 81.25%;
+    margin: 0 10%;
 }

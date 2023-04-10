@@ -6,15 +6,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 120px;
-    height: 100px;
+    width: 170px;
+    height: 145px;
 }
 
 .categoryItem h6{
     padding: 0;
     margin: 0;
+    margin-top: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 
 }
 

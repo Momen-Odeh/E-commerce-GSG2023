@@ -8,6 +8,8 @@ import WatchOutlinedIcon from '@mui/icons-material/WatchOutlined';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
+import MainSectionTitle from '../MainSectionTitle'
+import SectionTitle from '../SectionTitle'
 
 
 
@@ -22,10 +24,14 @@ let Categorys = [
     ]
 function CategoryList() {
   return (
-    <div className='CategoryList'>
+    <div className='Category'>
+      <SectionTitle secTitle="Categories"/>
+      <MainSectionTitle label='Browse By Category'/>
+      <div className='CategoryList'>
         {Categorys.map((item,index) => <CategoryItem icon={item.Icon} label={item.Label} key={index}/>)}
-        
+      </div>
     </div>
+    
   )
 }
 

@@ -4,7 +4,7 @@ function CategoryItem ({icon,label}) {
     const Icon = icon
   return (
     <div className='categoryItem'>
-        <Icon className='iconCategory' fontSize="large"/>
+        <Icon className='iconCategory' sx={{fontSize:'48px'}}/>
         <h6>{label}</h6>
     </div>
   )
