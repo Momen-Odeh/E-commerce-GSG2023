@@ -1,8 +1,8 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 function MusicExperienceDescription({decscription}) {
   return (
-    <div className='MusicExperienceDescription'>{decscription}</div>
+    <div className={styles.MusicExperienceDescription}>{decscription}</div>
   )
 }
 

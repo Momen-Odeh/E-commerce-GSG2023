@@ -1,8 +1,8 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 function MainSectionTitle({label}) {
   return (
-    <p className='MainSectionTitle'>{label}</p>
+    <p className={styles.MainSectionTitle}>{label}</p>
   )
 }
 

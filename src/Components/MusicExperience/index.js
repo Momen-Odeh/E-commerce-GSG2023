@@ -1,10 +1,10 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 import MusicExperienceRight from '../MusicExperienceRight'
 import MusicExperienceLeft from '../MusicExperienceLeft'
 function MusicExperience() {
   return (
-    <div className='MusicExperience'>
+    <div className={styles.MusicExperience}>
       <MusicExperienceLeft/>
       <MusicExperienceRight/>
     </div>

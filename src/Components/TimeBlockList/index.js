@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 import TimeBlockItem from '../TimeBlockItem'
 function TimeBlockList() {
   let timeArr = [
@@ -21,7 +21,7 @@ function TimeBlockList() {
     }
   ]
   return (
-    <div className='TimeBlockList'>
+    <div className={styles.TimeBlockList}>
       {timeArr.map(((item,index)=><TimeBlockItem timeLabel={item.time} typeLabel={item.label} key={index}/>))}
     </div>
   )

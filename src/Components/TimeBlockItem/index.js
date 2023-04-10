@@ -1,10 +1,10 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 function TimeBlockItem({timeLabel,typeLabel}) {
   return (
-    <div className='TimeBlockItem'>
-      <div className='timeLabel'>{timeLabel}</div>
-      <div className='typeLabel'>{typeLabel}</div>
+    <div className={styles.TimeBlockItem}>
+      <div className={styles.timeLabel}>{timeLabel}</div>
+      <div className={styles.typeLabel}>{typeLabel}</div>
     </div>
   )
 }

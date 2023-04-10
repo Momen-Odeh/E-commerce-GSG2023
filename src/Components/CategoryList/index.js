@@ -1,6 +1,6 @@
 import React from 'react'
 import CategoryItem from '../CategoryItem'
-import './index.css'
+import styles from './index.module.css'
 
 import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
 import ComputerOutlinedIcon from '@mui/icons-material/ComputerOutlined';
@@ -24,10 +24,10 @@ let Categorys = [
     ]
 function CategoryList() {
   return (
-    <div className='Category'>
+    <div className={styles.Category}>
       <SectionTitle secTitle="Categories"/>
       <MainSectionTitle label='Browse By Category'/>
-      <div className='CategoryList'>
+      <div className={styles.CategoryList}>
         {Categorys.map((item,index) => <CategoryItem icon={item.Icon} label={item.Label} key={index}/>)}
       </div>
     </div>

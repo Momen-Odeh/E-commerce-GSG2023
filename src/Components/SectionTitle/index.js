@@ -1,9 +1,9 @@
 import React from 'react'
 import RedBlock from '../RedBlock'
-import './index.css'
+import styles from './index.module.css'
 function SectionTitle({secTitle}) {
   return (
-    <div className='SectionTitle'>
+    <div className={styles.SectionTitle}>
         <RedBlock/>
         <p>{secTitle}</p>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import './index.css'
+import styles from './index.module.css'
 function RedBlock() {
   return (
-    <div className='RedBlock'></div>
+    <div className={styles.RedBlock}></div>
   )
 }
 
