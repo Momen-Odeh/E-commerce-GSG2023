@@ -1,8 +1,6 @@
 import React from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Layout from '../Components/Layout'
-import CategoryItem from '../Components/CategoryItem'
-import CategoryList from '../Components/CategoryList'
 import HomePage from '../Components/HomePage'
 function Router() {
   return (
