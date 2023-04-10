@@ -1,6 +1,5 @@
 .MusicExperienceLeft{
     width: 40%;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,4 +7,11 @@
     padding-left: 20px;
     row-gap: 40px;
     
+}
+
+@media screen and (max-width:800px) {
+    .MusicExperienceLeft{
+        width:100%;
+        padding: 20px;
+    }
 }

@@ -1,4 +1,14 @@
 .TimeBlockList{
     display: flex;
-    column-gap: 24px;
+    /* justify-content: space-around; */
+    width: 100%;
+    column-gap: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .TimeBlockList{
+        width: 90%;
+        justify-content: space-evenly;
+        background-color: aqua;
+    }
 }
