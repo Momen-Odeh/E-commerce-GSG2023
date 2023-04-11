@@ -1,0 +1,15 @@
+.ProductContainerLeftImages{
+    width: 24%;
+    /* background-color: blueviolet; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.ProductContainerLeftImages img{
+    background-color: #F5F5F5;
+    padding: 17%;
+    /* background-color: aqua; */
+    width: 66.5%;
+}
