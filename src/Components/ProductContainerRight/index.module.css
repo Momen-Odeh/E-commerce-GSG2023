@@ -1,4 +1,12 @@
 .ProductContainerRight{
-background-color: brown;
+/* background-color: brown; */
 width: 34%;
+}
+.p_txt{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+    margin: 0;
 }
