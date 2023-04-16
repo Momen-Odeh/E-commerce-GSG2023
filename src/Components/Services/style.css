@@ -1,0 +1,42 @@
+.Services{
+ display: flex;
+ margin: auto;
+ text-align: center;
+ width: 65%;
+ margin-top: 150px;
+ margin-bottom: 150px;
+ justify-content: space-between;
+}
+.ServiceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardImage{
+ background-color: black;
+ border-radius: 100%;
+ width: 70px;
+ height: 70px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.CardImageBackground{
+    border-radius: 100%;
+ width: 90px;
+ height: 90px;
+ background-color: #7D8184;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.CardTitle{
+ height: 20px;
+ margin-bottom: 0;
+}
+.CardInfo{
+
+}
