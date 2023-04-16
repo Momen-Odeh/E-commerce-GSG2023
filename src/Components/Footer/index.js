@@ -7,6 +7,7 @@ import './style.css'
 const index = () => {
     return (
         <><div className='Footer'>
+            
             <div className='Category'>
             <h2 className='CatTitle'>Exclusive</h2>
                 <h3 className='CatTitle'>Subscribe</h3>
