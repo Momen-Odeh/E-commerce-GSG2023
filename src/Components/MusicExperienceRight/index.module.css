@@ -1,5 +1,5 @@
 .MusicExperienceRight{
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     width: 80%;
     height: 80%;
     /* background-color: red; */
-    background: radial-gradient(rgb(80, 80, 80) 20%,black,black);
+    background: radial-gradient(rgb(80, 80, 80) 30%,black,black);
 }
 @media screen and (max-width:800px) {
     .MusicExperienceRight{

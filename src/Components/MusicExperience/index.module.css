@@ -4,6 +4,8 @@
     background-color: black;
     display: flex;
     margin: 0 10%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 @media screen and (max-width:800px) {
     .MusicExperience{
