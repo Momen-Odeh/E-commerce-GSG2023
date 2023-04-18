@@ -11,6 +11,8 @@ import Container from "@mui/material/Container";
 import Description from "./Description.js"; //----------------> 3
 import Price from "./Price.js"; //----------------> 4
 import { createTheme } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+
 const theme = createTheme({
   CardTheme: {
     boxShadow: "none",
@@ -79,18 +81,18 @@ const ProductCard = (props) => {
             <Box sx={{ marginY: 0.5 }}>
               <Avatar sx={theme.IconBackgroundColor}>
                 {
-                  <Icon
-                    icon={<FavoriteBorderIcon style={{ color: "black" }} />}
-                  />
+                  <IconButton color="secondary" aria-label="add to favorite">
+                    <FavoriteBorderIcon />
+                  </IconButton>
                 }
               </Avatar>
             </Box>
             <Box>
               <Avatar sx={theme.IconBackgroundColor}>
                 {
-                  <Icon
-                    icon={<VisibilityOutlinedIcon style={{ color: "black" }} />}
-                  />
+                  <IconButton color="primary" aria-label="See preview">
+                    <VisibilityOutlinedIcon />
+                  </IconButton>
                 }
               </Avatar>
             </Box>
