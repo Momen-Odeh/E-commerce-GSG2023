@@ -12,7 +12,7 @@ function HomePage() {
     <div className='HomePage'>
         <CategoryList/>
         <HR/>
-        <ProductPreview data={data} title="Best Selling Products" secTitle="This Month"/>
+        <ProductPreview data={data} title="Best Selling Products" secTitle="This Month" clickable/>
         <HR/>
         <MusicExperience/>
         <Arrivals />
