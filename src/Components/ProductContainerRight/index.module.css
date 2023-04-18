@@ -10,3 +10,9 @@ width: 34%;
     padding: 0;
     margin: 0;
 }
+@media screen and (max-width:650px) {
+
+    .ProductContainerRight{
+        width: 100%;
+    }
+}
