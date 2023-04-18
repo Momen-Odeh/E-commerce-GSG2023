@@ -71,6 +71,7 @@ input {
 .Images {
     display: flex;
     height: 90px;
+    gap: 10px;
 }
 
 .RightImages {
