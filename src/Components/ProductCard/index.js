@@ -13,6 +13,7 @@ import Description from "./Description.js"; //----------------> 3
 import Price from "./Price.js"; //----------------> 4
 import { createTheme } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 
 const theme = createTheme({
   CardTheme: {
@@ -66,9 +67,17 @@ const theme = createTheme({
   CardContent: {
     padding: "16px 0 0 0",
   },
+  NumberOfReviews: {
+    fontFamily: "Poppins",
+    fontWeight: 500,
+    padding: 0,
+    margin: 0,
+    fontSize: 14,
+    opacity: 0.5,
+  },
 });
 const ProductCard = (props) => {
-  const { image, title, rating, price } = props;
+  const { image, title, stars = 3.5, newPrice = 99, oldPrice = 120 } = props;
   return (
     <div>
       <Card sx={theme.CardTheme}>
@@ -108,9 +117,12 @@ const ProductCard = (props) => {
         {/* CardContent Contains The Card Description: Description, Price, Rating */}
         <CardContent sx={theme.CardContent}>
           <Description description={title} />
-          <Price priceBeforeDiscount={120} priceAfterDiscount={price} />
+          <Price priceBeforeDiscount={oldPrice} priceAfterDiscount={newPrice} />
           {/* <Ratings rating={rating} /> */}
-          <RatingStars component="span" size="small" />
+          <RatingStars component="span" size="small" ratingValue={stars} />
+          <Typography variant="p" component="span" sx={theme.NumberOfReviews}>
+            (49)
+          </Typography>
         </CardContent>
       </Card>
       <br />
