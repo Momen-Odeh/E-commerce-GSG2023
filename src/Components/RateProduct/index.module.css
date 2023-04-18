@@ -1,0 +1,17 @@
+.numReviews{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #808080;
+    border-right: 2px solid #808080;
+}
+
+.stutus{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00FF66;
+    padding-left: 16px;
+}

@@ -1,0 +1,12 @@
+.ProductContainerRightImage{
+    width: 71.5%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProductContainerRightImage img{
+    width: 89%;
+    /* background-color: aqua; */
+}

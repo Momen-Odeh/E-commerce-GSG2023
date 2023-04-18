@@ -2,18 +2,23 @@ import React from 'react'
 import CategoryList from '../CategoryList'
 import MusicExperience from '../MusicExperience'
 import HR from '../HR'
-import Arrivals from '../Arrivals'
-import Cards from '../Services'
+import ProductPreview from '../ProductPreview'
+import {data } from '../ProductPreview/data'
+import Arrivals from "../Arrivals"
+import Cards from "../Services"
+
 function HomePage() {
-        return (
-                <div className='HomePage'>
-                        <CategoryList />
-                        <HR />
-                        <MusicExperience />
-                        <Arrivals />
-                        <Cards />
-                </div>
-        )
+  return (
+    <div className='HomePage'>
+        <CategoryList/>
+        <HR/>
+        <ProductPreview data={data} title="Best Selling Products" secTitle="This Month"/>
+        <HR/>
+        <MusicExperience/>
+        <Arrivals />
+        <Cards />
+    </div>
+  )
 }
 
 export default HomePage
