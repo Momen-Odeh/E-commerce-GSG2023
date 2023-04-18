@@ -11,9 +11,8 @@ function ProductContainer() {
   tmp.length === 0 ?tmp = data2.filter(x => x.title ===id ):console.log("dd",tmp);
   return (
     <div className={stayles.ProductContainer}>
-      {/* <h1>{tmp[0].title}</h1> */}
       <ProductContainerLeft data={tmp[0]}/>
-      <ProductContainerRight data={tmp[0]}/>
+      <ProductContainerRight  data={tmp[0]}/>
     </div>
     
   )
