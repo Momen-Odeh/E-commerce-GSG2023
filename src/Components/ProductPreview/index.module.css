@@ -1,15 +1,16 @@
-.Container{
-    width: 80%;
-    margin: auto;
+.Container {
+  width: 80%;
+  margin: auto;
 }
 
-.Title{
-    display: flex;
-    justify-content: space-between;
+.Title {
+  display: flex;
+  justify-content: space-between;
 }
-.ProductContainer{
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+.ProductContainer {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
