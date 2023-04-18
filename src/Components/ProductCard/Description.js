@@ -7,9 +7,10 @@ const Description = (props) => {
   const theme = createTheme({ 
     DescriptionTheme: { 
       fontFamily: "Poppins", 
-      fontWight: "500", 
+      fontWeight: "bold", 
       fontSize: "16px", 
-      lineHight: "24px", 
+      lineHight: "24px",
+      textAlign: "left" 
     }, 
   }); 
   return ( 

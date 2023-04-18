@@ -55,7 +55,8 @@ const theme = createTheme({
   }, 
   ImageTheme: { 
     height: 170, 
-    width: 150, 
+    width: 250, 
+    objectFit: "contain",
     alignItems: "center", 
     display: "flex", 
   }, 
@@ -64,14 +65,17 @@ const theme = createTheme({
   }, 
 }); 
 const ProductCard = (props) => { 
-  const { image, title, rating, price } = props; 
+  const { image, title, rating, BeforePrice, AfterPrice, stars, discount } = props; 
   return ( 
     <div> 
       <Card sx={theme.CardTheme}> 
         {/* Container Contains Discount, Icons, Image of the Product */} 
         <Container sx={theme.ContainerTheme}> 
-          {/* Discount Box */} 
-          <Box sx={theme.DiscountBoxTheme}>%15</Box> 
+          {/* Discount Box */}
+          {discount &&
+
+          <Box sx={theme.DiscountBoxTheme}>{discount}</Box> 
+        } 
           {/* Icons Box */} 
           <Box sx={theme.IconsBoxTheme}> 
             <Box sx={{ marginY: 0.5 }}> 
@@ -104,8 +108,8 @@ const ProductCard = (props) => {
         {/* CardContent Contains The Card Description: Description, Price, Rating */} 
         <CardContent sx={theme.CardContent}> 
           <Description description={title} /> 
-          <Price priceBeforeDiscount={120} priceAfterDiscount={price} /> 
-          <Ratings rating={rating} /> 
+          <Price priceBeforeDiscount={BeforePrice} priceAfterDiscount={AfterPrice} /> 
+          <Ratings rating={rating} stars={stars}/> 
         </CardContent> 
       </Card> 
       <br /> 
