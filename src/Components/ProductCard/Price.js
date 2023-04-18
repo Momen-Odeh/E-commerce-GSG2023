@@ -13,15 +13,15 @@ const Price = ({ priceAfterDiscount, priceBeforeDiscount }) => {
     }, 
     priceAfterDiscountTheme: { 
       fontFamily: "Poppins", 
-      fontWeight: 500, 
+      fontWeight: "Bold", 
       padding: 0, 
-      margin: 0, 
+      marginRight: "10px", 
       fontSize: 16, 
       color: "#DB4444", 
     }, 
     priceBeforeDiscountTheme: { 
       fontFamily: "Poppins", 
-      fontWeight: 500, 
+      fontWeight: "Bold", 
       padding: 0, 
       margin: 0, 
       fontSize: 16, 

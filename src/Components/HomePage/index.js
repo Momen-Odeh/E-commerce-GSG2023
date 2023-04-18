@@ -2,16 +2,18 @@ import React from 'react'
 import CategoryList from '../CategoryList'
 import MusicExperience from '../MusicExperience'
 import HR from '../HR'
-import ProductCard from '../ProductCard'
-import PS from '../ProductCard/PS.png'
+import ProductPreview from '../ProductPreview'
+import {data} from '../ProductPreview/data'
 function HomePage() {
   return (
     <div className='HomePage'>
         <CategoryList/>
         <HR/>
+        <ProductPreview data={data} title="Best Selling Products" secTitle="This Month"/>
+        <HR/>
         <MusicExperience/>
         <HR/>
-        <ProductCard image={PS} title="title" rating={2} price={200} />
+        
     </div>
   )
 }

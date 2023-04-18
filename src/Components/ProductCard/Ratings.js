@@ -2,7 +2,7 @@ import React from "react";
 import Rating from "@mui/material/Rating"; 
 import { Box, createTheme } from "@mui/material"; 
 const Ratings = (props) => { 
-  const { rating } = props; 
+  const { rating, stars } = props; 
  
   const theme = createTheme({ 
     OuterDiv: { display: "flex" }, 
@@ -15,9 +15,10 @@ const Ratings = (props) => {
     }, 
   }); 
   return ( 
+    //deleted rating.count because it was useless and didnt work, putting rating only works
     <Box sx={theme.OuterDiv}> 
-      <Rating name="read-only" value={rating.rate} readOnly /> 
-      <Box sx={theme.CountTheme}>{`(${rating.count})`}</Box> 
+      <Rating defaultValue={stars} precision={0.5} readOnly/>
+      <Box sx={theme.CountTheme}>{`(${rating})`}</Box> 
     </Box> 
   ); 
 }; 
