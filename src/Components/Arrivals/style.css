@@ -1,0 +1,90 @@
+.Arrivals {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.Title {
+  justify-content: flex-start;
+  text-align: left;
+  margin: 30px;
+}
+
+.Playstation {
+  width: 50%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  flex-direction: column;
+  height: 400px;
+  background-color: black;
+  background-image: url("assets/pl.png");
+  background-size: contain;
+  background-position: right;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+}
+.Woman {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  flex-direction: column;
+  height: 190px;
+  margin-bottom: 20px;
+  background-color: black;
+  background-image: url("assets/Woman.png");
+  background-size: contain;
+  background-position: right;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+}
+.Cards {
+  display: flex;
+}
+
+.RightImages {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.LowerImages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Speakers{
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  flex-direction: column;
+  background-color: black;
+  background-image: url("assets/Speaker.png");
+  height: 190px;
+  background-size: contain;
+  background-position: right;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+}
+.Perfume{
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    flex-direction: column;
+    background-color: black;
+    background-image: url("assets/Perfume.png");
+    height: 190px;
+    background-size: contain;
+    background-position: right;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+  }
+  
