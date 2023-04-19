@@ -1,19 +1,5 @@
-.CategoryList{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
-    /* flex-direction: column; */
-    /* background-color: aqua; */
-}
 
 .Category{
     width: 81.25%;
     margin: 0 10%;
-}
-@media screen and (max-width:490px) {
-    .CategoryList{
-        flex-direction: column;
-        align-items: center;
-        row-gap: 30px;
-    }
 }
