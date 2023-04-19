@@ -8,7 +8,7 @@ function ProductPage({data}) {
   
   return (
     <>
-    <ProductContainer/>
+    <ProductContainer />
     <ProductPreview data={data} secTitle="Related Item" clickable/>
     </>
   )
