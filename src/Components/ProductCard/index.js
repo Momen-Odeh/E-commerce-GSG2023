@@ -12,6 +12,7 @@ import Description from "./Description.js"; //----------------> 3
 import Price from "./Price.js"; //----------------> 4
 import { createTheme } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
+import { Link } from 'react-router-dom';
 
 const theme = createTheme({
   CardTheme: {
@@ -67,7 +68,7 @@ const theme = createTheme({
   },
 });
 const ProductCard = (props) => {
-  const { image, title, rating, BeforePrice, AfterPrice, stars, discount } =
+  const { image, title, rating, BeforePrice, AfterPrice, stars, discount,clickable } =
     props;
   return (
     <div>
@@ -98,12 +99,23 @@ const ProductCard = (props) => {
             </Box>
           </Box>
           {/* CardMedia Contains the Image of the Product */}
+          {clickable?
+          <Link onClick={window.scrollTo(0, 0)}  to={`/productPage/${title}`}>
           <CardMedia
             component="img"
             sx={theme.ImageTheme}
             image={image}
             title="green iguana"
           />
+          </Link>
+          :
+          <CardMedia
+            component="img"
+            sx={theme.ImageTheme}
+            image={image}
+            title="green iguana"
+          />}
+          
         </Container>
         {/* CardContent Contains The Card Description: Description, Price, Rating */}
         <CardContent sx={theme.CardContent}>
