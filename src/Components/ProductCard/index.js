@@ -58,7 +58,8 @@ const theme = createTheme({
   },
   ImageTheme: {
     height: 170,
-    width: 250,
+    width: 190,
+    mixBlendMode: "darken",
     objectFit: "contain",
     alignItems: "center",
     display: "flex",
@@ -105,7 +106,7 @@ const ProductCard = (props) => {
             component="img"
             sx={theme.ImageTheme}
             image={image}
-            title="green iguana"
+            title={title}
           />
           </Link>
           :

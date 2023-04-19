@@ -4,7 +4,7 @@ import ProductCard from '../ProductCard'
 import SectionTitle from '../SectionTitle'
 import MainSectionTitle from '../MainSectionTitle'
 import ActionButton from '../ActionButton'
-
+import Grid from '@mui/material/Grid';
 
 function ProductContainer({ data, title, secTitle,clickable }) {
   return (
@@ -16,14 +16,17 @@ function ProductContainer({ data, title, secTitle,clickable }) {
         <ActionButton Title='View All' />
       </div>
       }
-      <div className={styles.ProductContainer}>
-     
-        {data.map((item,index) => {
-          return  clickable ?
-          <ProductCard image={item.img} key={index} title={item.title} rating={item.rating} BeforePrice={item.BeforePrice} AfterPrice={item.AfterPrice} stars={item.stars} clickable/>:
-          <ProductCard key={index} image={item.img} title={item.title} rating={item.rating} BeforePrice={item.BeforePrice} AfterPrice={item.AfterPrice} stars={item.stars}/>
-        })}
-      </div>
+      <Grid className={styles.ProductContainer} container justifyContent="space-between">
+        {data.map((item, index) => {
+          let clickableValue = false
+          clickable? clickableValue=true : clickableValue=false
+          return(
+            <Grid item margin={'0 auto'}><ProductCard key={index} className={styles.Link} image={item.img} title={item.title} rating={item.rating} BeforePrice={item.BeforePrice} AfterPrice={item.AfterPrice} stars={item.stars} discount={item.discount} clickable={clickableValue} /> </Grid> 
+            )
+          }
+          )
+          }
+      </Grid >
     </div>
   )
 }
