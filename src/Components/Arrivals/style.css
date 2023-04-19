@@ -87,4 +87,9 @@
     border-radius: 5px;
     background-repeat: no-repeat;
   }
+  @media screen and (max-width:620px) {
+    .Arrivals{
+        font-size: 11px;
+    }
+}
   

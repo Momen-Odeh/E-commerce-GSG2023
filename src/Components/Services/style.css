@@ -12,8 +12,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
 }
-
+@media screen and (max-width:1169px) {
+    .ServiceCard{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
 .CardImage{
  background-color: black;
  border-radius: 100%;

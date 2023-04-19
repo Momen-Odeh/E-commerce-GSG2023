@@ -47,12 +47,6 @@ input {
     width: 100%;
     font-size: 17px;
 }
-
-.Search img {
-    margin-left: 10px;
-    height: 20px;
-}
-
 .Category {
     width: 16%;
 }
@@ -80,7 +74,7 @@ input {
     margin-left: -10px;
 }
 
-.RightImages img{
+.RightImages img {
     margin-bottom: 20px;
 }
 
@@ -100,4 +94,86 @@ input {
     justify-content: space-between;
     margin-top: 30px;
     margin-left: 10px;
+}
+
+@media screen and (max-width:1021px) {
+    .Footer {
+        font-size: 11px;
+        height: 350px;
+    }
+
+    .Images {
+        flex-direction: column;
+    }
+
+    .Images img {
+        width: fit-content;
+        height: 100%;
+    }
+
+    .RightImages {
+        margin-left: 5px;
+    }
+
+    .RightImages img {
+        width: 80px;
+        margin-bottom: 5px;
+    }
+
+    .Social {
+        margin-top: 80px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .Search input {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .Footer {
+        font-size: 8px;
+        height: 200px;
+        margin-top: 10px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .Images{
+        height: 70px;
+    }
+    .Images img {
+        width: fit-content;
+        width: 30px;
+        height: 30px;
+    }
+
+    .RightImages {
+        margin-left: 5px;
+    }
+
+    .RightImages img {
+        width: 30px;
+        margin-bottom: 5px;
+        height: 50%;
+    }
+    
+    .Social {
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 11px;
+    }
+    .Social img{
+        width: 10px;
+        height: 10px;
+    }
+    .Copyright{
+        font-size: 12px;
+    }
+    .Search{
+        height: 15px;
+    }
+    .Search input {
+        font-size: 5px;
+    }
 }

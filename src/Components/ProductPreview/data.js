@@ -1,8 +1,3 @@
-import Coat from './assets/Coat.png'
-import Bag from './assets/Bag.png'
-import Fan from './assets/Fan.png'
-import Desk from './assets/Desk.png'
-
 export const data = [
     {
         img: 'https://www.pngitem.com/pimgs/m/473-4735430_transparent-puffer-jacket-png-png-download.png',
