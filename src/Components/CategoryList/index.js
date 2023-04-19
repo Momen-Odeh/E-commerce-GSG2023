@@ -11,6 +11,7 @@ import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined
 import MainSectionTitle from '../MainSectionTitle'
 import SectionTitle from '../SectionTitle'
 
+import Grid from '@mui/material/Grid';
 
 
 
@@ -27,9 +28,15 @@ function CategoryList() {
     <div className={styles.Category}>
       <SectionTitle secTitle="Categories"/>
       <MainSectionTitle label='Browse By Category'/>
-      <div className={styles.CategoryList}>
-        {Categorys.map((item,index) => <CategoryItem icon={item.Icon} label={item.Label} key={index}/>)}
-      </div>
+      <Grid container gap={2} justifyContent={'center'}>
+        {Categorys.map((item,index) => 
+          <Grid item key={index}>
+          <CategoryItem icon={item.Icon} label={item.Label} />
+          </Grid>
+          )
+        }
+      </Grid>
+    
     </div>
     
   )

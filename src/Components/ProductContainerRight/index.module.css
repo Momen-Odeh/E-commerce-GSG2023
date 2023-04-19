@@ -1,6 +1,6 @@
 .ProductContainerRight{
 /* background-color: brown; */
-width: 34%;
+/* width: 34%; */
 }
 .p_txt{
     font-family: 'Poppins',sans-serif;
@@ -10,9 +10,9 @@ width: 34%;
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width:650px) {
+/* @media screen and (max-width:650px) {
 
     .ProductContainerRight{
         width: 100%;
     }
-}
+} */
