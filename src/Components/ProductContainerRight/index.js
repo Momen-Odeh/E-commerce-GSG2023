@@ -1,9 +1,10 @@
 import React from 'react'
 import stayles from './index.module.css'
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import ProductTitle from '../ProductTitle';
 import RateProduct from '../RateProduct';
+import PartTwo from '../PartTwo/PartTwo';
 function ProductContainerRight({data}) {
   return (
 
@@ -14,6 +15,7 @@ function ProductContainerRight({data}) {
           <Grid item xs={12}><ProductTitle title={`$ ${data.AfterPrice}`}/></Grid>
           <Grid item xs={12}><p className={stayles.p_txt}>{data.describtion}</p></Grid>
           <Grid item xs={12}><hr/></Grid>
+          <PartTwo/>
         </Grid>
       
     </div>
