@@ -1,5 +1,4 @@
 import React from 'react'
-import stayles from './index.module.css'
 import ProductPreview from '../ProductPreview'
 import ProductContainer from '../ProductContainer'
 
