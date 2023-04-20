@@ -10,9 +10,7 @@ function Layout() {
     <div>
       <Header/>
       <MainHeader/>
-     
-     
-            <Outlet />
+      <Outlet />
       <Footer />
     </div>
   )

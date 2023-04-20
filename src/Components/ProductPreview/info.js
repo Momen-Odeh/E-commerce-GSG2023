@@ -40,16 +40,6 @@ const info= [
         stars:3,
         
     },
-    {
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_YtgcN0khI5aaD5CZ8jq1xyh2XT6xS4ePA&usqp=CAU',
-        title: " Kids Electric Car ",
-        rating: 12,
-        describtion:'Compact and space-saving furniture for organizing books or small items, made from various materials and suitable for small spaces.',
-        BeforePrice: 360,
-        AfterPrice: 310,
-        stars:3,
-        
-    },
     
     
 ]

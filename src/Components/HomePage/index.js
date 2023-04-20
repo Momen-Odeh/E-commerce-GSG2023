@@ -10,19 +10,16 @@ import {data } from '../ProductPreview/data'
 import Arrivals from "../Arrivals"
 import Cards from "../Services"
 import Merg from '../Merg/Merg'
-// import Slider from "../Slider/Slider.js";
 function HomePage() {
   return (
     <div className='HomePage'>
-    <Merg/>
+        <Merg/>
         <CategoryList/>
         <HR/>
         <ProductPreview data={data} title="Best Selling Products" secTitle="This Month" clickable/>
         <HR/>
         <MusicExperience/>
-        {/*  */}
-        <ProductPreview data={info} title="Explore Our Products" secTitle="Our Products" clickable/>
-
+        <ProductPreview data={info} title="Explore Our Products" secTitle="Our Products"/>
         <Arrivals />
         <Cards />
     </div>
