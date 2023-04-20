@@ -2,10 +2,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Footer from '../Footer'
+import Header from '../Header'
+import MainHeader from '../MainHeader'
+
 function Layout() {
   return (
     <div>
-      <header>this is header</header>
+      <Header/>
+      <MainHeader/>
       <Outlet />
       <Footer />
     </div>
