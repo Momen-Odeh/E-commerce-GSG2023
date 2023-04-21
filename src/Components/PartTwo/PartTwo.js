@@ -129,14 +129,14 @@ export default function ExampleProductAttributes() {
 {/*  **************************************************************************  */}
 
 
-    <div class="fllexx">
+    {/* <div class="fllexx">
 
      <All/>
      <Icon/> 
     </div>
       {/* <div >
         <Ser/>
-      </div> */}
+      </div> */} 
     </div>
   );
 }
