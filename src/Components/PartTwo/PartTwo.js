@@ -1,142 +1,167 @@
 import * as React from 'react';
 import Box from '@mui/joy/Box';
-import FormLabel from '@mui/joy/FormLabel';
-import Radio, { radioClasses } from '@mui/joy/Radio';
-import RadioGroup from '@mui/joy/RadioGroup';
-import Sheet from '@mui/joy/Sheet';
-import Done from '@mui/icons-material/Done';
-import All from '../All/All'
+
+import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
+import LoopIcon from "@mui/icons-material/Loop";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
 import Icon from '../Icon/Icon'
 import './PartTwo.css'
-import Ser from '../Ser/Ser'
+// import Ser from '../Ser/Ser'
+import ColorButtons from "../SharedComponents/Button/index.jsx";
+
+import PlusMinus from '../SharedComponents/PlusMinus/index.jsx'
+
 export default function ExampleProductAttributes() {
   return (
     <div>
-    <Box sx={{ resize: 'horizontal', overflow: 'auto', px: 2 }}>
-      <FormLabel
-        id="product-color-attribute"
-        sx={{
-          mb: 1.5,
-          fontWeight: 'xl',
-          textTransform: 'uppercase',
-          fontSize: 'xs',
-          letterSpacing: '0.15rem',
-        }}
-      >
-        Color :
-      </FormLabel>
-      <RadioGroup
-        aria-labelledby="product-color-attribute"
-        defaultValue="warning"
-        sx={{ gap: 2, flexWrap: 'wrap', flexDirection: 'row' }}
-      >
-        {['primary', 'danger'].map(
-          (color) => (
-            <Sheet
-              key={color}
+   
+{/*  **************************************************************************  */}
+<Box sx={{ display: "flex", margin: "20px" }}>
+            <Box>Colors :</Box>
+            <Box
               sx={{
-                position: 'relative',
-                width: 40,
-                height: 40,
-                flexShrink: 0,
-                bgcolor: `${color}.solidBg`,
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                margin: "0 5px",
+                width: "20px",
+                height: "20px",
+                background: "#A0BCE0",
+                borderRadius: "50%",
+              }}
+            ></Box>
+            <Box
+              sx={{
+                margin: "0 5px",
+                width: "20px",
+                height: "20px",
+                background: "#E07575",
+                borderRadius: "50%",
+              }}
+            ></Box>
+          </Box>
+
+<Box sx={{ display: "flex", margin: "30px 0" }}>
+            <Box>Size :</Box>
+            <button
+              style={{
+                width: "32px",
+                height: "32px",
+                margin: "0 10px",
+                border: "1px solid #222",
+                "&:hover": {
+                  width: "32px",
+                  height: "32px",
+                  margin: "0 10px",
+                  border: "1px solid #222",
+                  color: "white",
+                  backgroundColor: "#DB4444",
+                },
               }}
             >
-              <Radio
-                overlay
-                variant="solid"
-                color={color}
-                checkedIcon={<Done fontSize="xl2" />}
-                value={color}
-                slotProps={{
-                  input: { 'aria-label': color },
-                  radio: {
-                    sx: {
-                      display: 'contents',
-                      '--variant-borderWidth': '2px',
-                    },
-                  },
-                }}
-                sx={{
-                  '--joy-focus-outlineOffset': '4px',
-                  '--joy-palette-focusVisible': (theme) =>
-                    theme.vars.palette[color][500],
-                  [`& .${radioClasses.action}.${radioClasses.focusVisible}`]: {
-                    outlineWidth: '2px',
-                  },
-                }}
-              />
-            </Sheet>
-          ),
-        )}
-      </RadioGroup>
-      <br />
-      <FormLabel
-        id="product-size-attribute"
-        sx={{
-          mb: 1.5,
-          fontWeight: 'xl',
-          textTransform: 'uppercase',
-          fontSize: 'xs',
-          letterSpacing: '0.15rem',
-        }}
-      >
-        Size
-      </FormLabel>
-      <RadioGroup
-        aria-labelledby="product-size-attribute"
-        defaultValue="M"
-        sx={{ gap: 2, mb: 2, flexWrap: 'wrap', flexDirection: 'row' }}
-      >
-        {['XS', 'S', 'M', 'L', 'XL'].map((size) => (
-          <Sheet
-            key={size}
-            sx={{
-              position: 'relative',
-              width: 40,
-              height: 40,
-              flexShrink: 0,
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              '--joy-focus-outlineOffset': '4px',
-              '--joy-palette-focusVisible': (theme) =>
-                theme.vars.palette.neutral.outlinedBorder,
-              [`& .${radioClasses.checked}`]: {
-                [`& .${radioClasses.label}`]: {
-                  fontWeight: 'lg',
-                },
-                [`& .${radioClasses.action}`]: {
-                  '--variant-borderWidth': '2px',
-                  borderColor: 'text.secondary',
-                },
-              },
-              [`& .${radioClasses.action}.${radioClasses.focusVisible}`]: {
-                outlineWidth: '2px',
-              },
-            }}
-          >
-            <Radio color="neutral" overlay disableIcon value={size} label={size} />
-          </Sheet>
-        ))}
-      </RadioGroup>
-    </Box>
-{/*  **************************************************************************  */}
+              XS
+            </button>
+            <button
+              style={{
+                width: "32px",
+                height: "32px",
+                margin: "0 10px",
+                border: "1px solid #222",
+              }}
+            >
+              S
+            </button>
+            <button
+              style={{
+                width: "32px",
+                height: "32px",
+                margin: "0 10px",
+                backgroundColor: "#DB4444",
+                border: "1px solid #222",
+              }}
+            >
+              ML
+            </button>
+            <button
+              style={{
+                width: "32px",
+                height: "32px",
+                margin: "0 10px",
+                border: "1px solid #222",
+              }}
+            >
+              L
+            </button>
+            <button
+              style={{
+                width: "32px",
+                height: "32px",
+                margin: "0 10px",
+                border: "1px solid #222",
+              }}
+            >
+              XL
+            </button>
+          </Box>
+{/* **************************************8 */}
+<Box sx={{ display: "flex", margin: "0 -5px" }}>
+            <Box sx={{ margin: "0 5px" }}>
+              <PlusMinus />
+            </Box>
+            <Box sx={{ margin: "0 6px" }} >
+              <ColorButtons innerText={"Buy"}  type={"red"}/>
+            </Box>
+            <Box
+              sx={{
+                width: 34,
+                height: 30,
+                borderRadius: 0,
+                border: "0.1px solid #000000",
+                backgroundColor: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "2px 5px",
+              }}
+            >
+              <Icon icon={<FavoriteBorderIcon />} />
+            </Box>
+          </Box>
 
 
-    <div class="fllexx">
+{/* ******************************************************************** */}
 
-     <All/>
-     <Icon/> 
-    </div>
-      {/* <div >
-        <Ser/>
-      </div> */}
+<Box sx={{ margin: "50px 0" }}>
+            <Box
+              sx={{
+                margin: "5px 5px 5px 10px",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Box marginRight={3}>
+                <Icon icon={<AirportShuttleIcon />}  />
+              </Box>
+              <Box>
+                <Box>Free Delivery</Box>
+                <Box>Enter your postal code for Delivery Availability</Box>
+              </Box>
+            </Box>
+            
+            <Box sx={{ display: "flex", justifyContent: "space-evenly" ,marginTop:"25px"}}>
+              <Box marginRight={4}>
+                <Icon icon={<LoopIcon />} />
+              </Box>
+              <Box >
+                <Box>Return Delivery</Box>
+                <Box>Free 30 Days Delivery Returns. Details</Box>
+              </Box>
+            </Box>
+          </Box>  
+
+
+
+
+          
+   
     </div>
   );
 }
