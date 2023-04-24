@@ -5,45 +5,45 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import { Button } from '@mui/material';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function DenseMenu() {
+
   return (
-    <Paper sx={{ width: 320 ,height:400 }}>
-      <MenuList dense>
+
+
+    
+      <MenuList dense sx={{ width: 320 ,height:400 ,color:"black"}}>
         <MenuItem>
-          <ListItemText inset>  Woman’s Fashion </ListItemText>
+          <Button  endIcon={<ArrowForwardIosIcon/>} sx={{color:"black"}}>  Woman’s Fashion </Button>
         </MenuItem> 
         <MenuItem>
-          <ListItemText inset> Men’s Fashion    </ListItemText>
+          <Button  sx={{color:"black"}}> Men’s Fashion    </Button>
         </MenuItem>
         <MenuItem>
-          <ListItemText inset> Electronics  </ListItemText>
+          <Button inset  sx={{color:"black"}}> Electronics  </Button>
         </MenuItem>
         <MenuItem>
-          <ListItemIcon>
-            
-          </ListItemIcon>  
-          Home And Lifestyle
+          <Button inset  sx={{color:"black"}}>     Home And Lifestyle  </Button>
+     
 
         </MenuItem>
-        <Divider />
         <MenuItem>
-          <ListItemText  inset> Medicine  </ListItemText>
+        <Button   sx={{color:"black"}}>  Medicine </Button>
         </MenuItem>
         <MenuItem>
-          <ListItemText  inset>   Sports  And Outdoor</ListItemText>
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <ListItemText  inset>Baby’s And Toys   </ListItemText>
+          <Button inset  sx={{color:"black"}}>   Sports  And Outdoor</Button>
         </MenuItem>
         <MenuItem>
-          <ListItemText  inset> Groceries And  Pets  </ListItemText>
+          <Button  inset  sx={{color:"black"}}>Baby’s And Toys   </Button>
         </MenuItem>
         <MenuItem>
-          <ListItemText  inset>  Health And Beauty </ListItemText>
+          <Button inset endIcon={<ArrowForwardIosIcon/>} sx={{color:"black"}}> Groceries And  Pets  </Button>
+        </MenuItem>
+        <MenuItem>
+        <Button  inset  sx={{color:"black"}}>   Health And Beauty </Button>
         </MenuItem>
       </MenuList>
-    </Paper>
   );
 }
