@@ -1,0 +1,28 @@
+.categoryItem{
+    /* background-color: aqua; */
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 170px;
+    height: 145px;
+}
+
+.categoryItem h6{
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.categoryItem:hover{
+    background-color: #DB4444;
+    color: aliceblue;
+    font-weight: 100;
+    transition: 500ms;
+}

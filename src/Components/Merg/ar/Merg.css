@@ -1,0 +1,7 @@
+.merg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    width: 81.25%;
+    margin: 70px 10%;
+}
